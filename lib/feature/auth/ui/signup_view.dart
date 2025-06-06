@@ -1,14 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:our_market_app/core/helpers/navigation.dart';
 import 'package:our_market_app/core/utils/app_color.dart';
-import 'package:our_market_app/feature/auth/ui/forget_password_view.dart';
-import 'package:our_market_app/feature/auth/ui/signup_view.dart';
+import 'package:our_market_app/feature/auth/ui/login_view.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_button.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_text_button.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_text_for_feild.dart';
 
-class LoginView extends StatelessWidget {
-  const LoginView({super.key});
+class SignUpView extends StatelessWidget {
+  const SignUpView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -35,6 +34,11 @@ class LoginView extends StatelessWidget {
                     child: Column(
                       children: [
                         CustomTextFormFeild(
+                          label: 'Name',
+                          keyboardType: TextInputType.name,
+                        ),
+                        SizedBox(height: 20),
+                        CustomTextFormFeild(
                           label: 'Email',
                           keyboardType: TextInputType.emailAddress,
                         ),
@@ -49,36 +53,19 @@ class LoginView extends StatelessWidget {
                           ),
                         ),
                         SizedBox(height: 20),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            CustomTextButton(
-                              text: 'Forget Password?',
-                              onTap: () {
-                                navigatePush(
-                                  context,
-                                  const ForgetPasswordView(),
-                                );
-                              },
-                            ),
-                          ],
-                        ),
+
+                        CustomButton(text: 'Sign Up', onTap: () {}),
                         SizedBox(height: 20),
-                        CustomButton(text: 'Login', onTap: () {}),
-                        SizedBox(height: 20),
-                        CustomButton(text: 'Login With Google', onTap: () {}),
+                        CustomButton(text: 'Sign Up With Google', onTap: () {}),
                         SizedBox(height: 20),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Text("Don't have an account? "),
+                            Text("Already have an account? "),
                             CustomTextButton(
-                              text: 'Sign Up',
+                              text: 'Login',
                               onTap: () {
-                                navigatePushReplace(
-                                  context,
-                                  const SignUpView(),
-                                );
+                                navigatePushReplace(context, const LoginView());
                               },
                             ),
                           ],
