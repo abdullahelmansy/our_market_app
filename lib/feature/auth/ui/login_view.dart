@@ -6,6 +6,7 @@ import 'package:our_market_app/feature/auth/ui/signup_view.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_button.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_text_button.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_text_for_feild.dart';
+import 'package:our_market_app/feature/nav_bar/ui/main_home_view.dart';
 
 class LoginView extends StatelessWidget {
   const LoginView({super.key});
@@ -64,7 +65,12 @@ class LoginView extends StatelessWidget {
                           ],
                         ),
                         SizedBox(height: 20),
-                        CustomButton(text: 'Login', onTap: () {}),
+                        CustomButton(
+                          text: 'Login',
+                          onTap: () {
+                            navigatePushReplace(context, MainHomeView());
+                          },
+                        ),
                         SizedBox(height: 20),
                         CustomButton(text: 'Login With Google', onTap: () {}),
                         SizedBox(height: 20),
