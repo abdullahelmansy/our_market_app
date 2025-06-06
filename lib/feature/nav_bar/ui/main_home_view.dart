@@ -1,14 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
 import 'package:our_market_app/core/utils/app_color.dart';
+import 'package:our_market_app/feature/favorite/ui/favorite_view.dart';
+import 'package:our_market_app/feature/home/ui/home_view.dart';
+import 'package:our_market_app/feature/profile/ui/profile_view.dart';
+import 'package:our_market_app/feature/store/ui/store_voew.dart';
 
 class MainHomeView extends StatelessWidget {
-  const MainHomeView({super.key});
-
+  MainHomeView({super.key});
+  final List<Widget> screens = [
+    HomeView(),
+    StoreView(),
+    FavoriteView(),
+    ProfileView(),
+  ];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(child: Text('Home')),
+      body: SafeArea(child: screens[0]),
       bottomNavigationBar: Padding(
         padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 15),
         child: GNav(
