@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:our_market_app/core/widgets/custom_search_feild.dart';
+import 'package:our_market_app/feature/home/ui/widgets/categories_list.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -12,8 +13,12 @@ class HomeView extends StatelessWidget {
         children: [
           CustomSearchFeild(),
           Image.asset('assets/images/buy.jpg', fit: BoxFit.cover),
+          Text('Popular Categories', style: TextStyle(fontSize: 20)),
+          SizedBox(height: 15),
+          CategoriesListWidget(),
         ],
       ),
     );
   }
 }
+
