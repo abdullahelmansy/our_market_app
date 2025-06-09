@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:our_market_app/core/utils/app_color.dart';
 import 'package:our_market_app/core/widgets/custom_button.dart';
+import 'package:our_market_app/core/widgets/custom_cache_image.dart';
 import 'package:our_market_app/core/widgets/custom_search_feild.dart';
 import 'package:our_market_app/feature/home/ui/widgets/categories_list.dart';
 
@@ -33,9 +34,9 @@ class HomeView extends StatelessWidget {
                         bottomLeft: Radius.circular(16),
                         bottomRight: Radius.circular(16),
                       ),
-                      child: Image.network(
-                        'https://img.freepik.com/premium-psd/product-display-3d-podium-background_795097-404.jpg?ga=GA1.1.114806169.1744834769&semt=ais_hybrid&w=740',
-                        fit: BoxFit.cover,
+                      child: CustomCacheImage(
+                        url:
+                            "https://img.freepik.com/premium-psd/product-display-3d-podium-background_795097-404.jpg?ga=GA1.1.114806169.1744834769&semt=ais_hybrid&w=740",
                       ),
                     ),
                     Positioned(
@@ -122,3 +123,6 @@ class HomeView extends StatelessWidget {
     );
   }
 }
+
+
+
