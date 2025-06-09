@@ -3,7 +3,7 @@ import 'package:our_market_app/core/helpers/navigation.dart';
 import 'package:our_market_app/core/utils/app_color.dart';
 import 'package:our_market_app/feature/auth/ui/forget_password_view.dart';
 import 'package:our_market_app/feature/auth/ui/signup_view.dart';
-import 'package:our_market_app/feature/auth/ui/widgets/custom_button.dart';
+import 'package:our_market_app/core/widgets/custom_button.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_text_button.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_text_for_feild.dart';
 import 'package:our_market_app/feature/nav_bar/ui/main_home_view.dart';

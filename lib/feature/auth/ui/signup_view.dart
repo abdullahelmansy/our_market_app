@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:our_market_app/core/helpers/navigation.dart';
 import 'package:our_market_app/core/utils/app_color.dart';
 import 'package:our_market_app/feature/auth/ui/login_view.dart';
-import 'package:our_market_app/feature/auth/ui/widgets/custom_button.dart';
+import 'package:our_market_app/core/widgets/custom_button.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_text_button.dart';
 import 'package:our_market_app/feature/auth/ui/widgets/custom_text_for_feild.dart';
 
