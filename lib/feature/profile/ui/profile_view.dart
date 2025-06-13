@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:our_market_app/core/helpers/navigation.dart';
 import 'package:our_market_app/core/utils/app_color.dart';
+import 'package:our_market_app/feature/profile/ui/edit_name_view.dart';
 import 'package:our_market_app/feature/profile/ui/widgets/custom_row_button.dart';
 
 class ProfileView extends StatelessWidget {
@@ -34,8 +36,10 @@ class ProfileView extends StatelessWidget {
             ),
             CustomRowButton(
               icon: Icons.person,
-              title: 'Edit Profile',
-              onTap: () {},
+              title: 'Edit Name',
+              onTap: () {
+                navigatePush(context, EditNameView());
+              },
             ),
             CustomRowButton(
               icon: Icons.shopping_basket,
