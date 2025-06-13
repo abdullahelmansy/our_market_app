@@ -32,13 +32,20 @@ class ProfileView extends StatelessWidget {
               'User Email',
               style: TextStyle(fontSize: 18, color: AppColors.kGreyColor),
             ),
-            CustomRowButton(icon: Icons.person, title: 'Edit Profile', onTap: () {},),
-            CustomRowButton(icon: Icons.shopping_basket, title: 'My Orders', onTap: () {},),
-            CustomRowButton(icon: Icons.logout, title: 'Logout', onTap: () {},),
+            CustomRowButton(
+              icon: Icons.person,
+              title: 'Edit Profile',
+              onTap: () {},
+            ),
+            CustomRowButton(
+              icon: Icons.shopping_basket,
+              title: 'My Orders',
+              onTap: () {},
+            ),
+            CustomRowButton(icon: Icons.logout, title: 'Logout', onTap: () {}),
           ],
         ),
       ),
     );
   }
 }
-
